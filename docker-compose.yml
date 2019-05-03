@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  onlinepolling:
+    image: ${DOCKER_REGISTRY-}onlinepolling
+    build:
+      context: .\OnlinePolling
+      dockerfile: Dockerfile
